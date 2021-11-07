@@ -13,7 +13,6 @@ export const Login = () => {
     return (
         <div className='container'>
             <Button onClick={login} variant="contained" disableElevation>
-
                 войти через Google
             </Button>
         </div>

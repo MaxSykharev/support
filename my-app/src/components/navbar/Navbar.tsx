@@ -11,7 +11,6 @@ export const Navbar = () => {
     const [user] = useAuthState(auth)
 
     return (
-
         <AppBar color={'primary'} position="static">
             <Toolbar >
                 {user ?
@@ -20,7 +19,6 @@ export const Navbar = () => {
                     <NavLink to={LOGIN_ROUTE}>
                         <p>Not logged in</p>
                     </NavLink >
-
                 }
             </Toolbar>
         </AppBar>

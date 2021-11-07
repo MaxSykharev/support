@@ -8,10 +8,10 @@ import { Navbar } from './components/navbar/Navbar';
 
 function App() {
   const { auth } = useContext(Context)
-  const [user, loading,error ] = useAuthState(auth) 
+  const [user, loading, error] = useAuthState(auth)
 
   if (loading) {
-   return < Loader />
+    return < Loader />
   }
   return (
     <BrowserRouter>

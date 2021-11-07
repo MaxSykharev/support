@@ -5,7 +5,7 @@ import firebase from "firebase";
 import 'firebase/firestore'
 import 'firebase/auth'
 
- const firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyCrKR7ta3rBSIZ2mkMPdPa4goXsYXmrHf8",
   authDomain: "support-d1f15.firebaseapp.com",
   projectId: "support-d1f15",
@@ -13,15 +13,13 @@ import 'firebase/auth'
   messagingSenderId: "257690139237",
   appId: "1:257690139237:web:cb616b8197cf672391248c",
   measurementId: "G-SWGTH709L5",
-  databaseURL:"https://support-d1f15-default-rtdb.firebaseio.com/"
+  databaseURL: "https://support-d1f15-default-rtdb.firebaseio.com/"
 };
 
 const initFirebase = firebase.initializeApp(firebaseConfig)
 export const Context = createContext<any | null>(null);
-export var db = firebase.firestore()
 const auth = firebase.auth()
 export const firestore = firebase.firestore()
-
 
 ReactDOM.render(
   <Context.Provider value={{
@@ -30,7 +28,6 @@ ReactDOM.render(
     firestore,
   }}>
     <App />
-  </Context.Provider>
-   ,
+  </Context.Provider>,
   document.getElementById('root')
 );
