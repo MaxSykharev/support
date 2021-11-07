@@ -1,6 +1,5 @@
-import { Component } from "react";
-import { Chat } from "./components/Chat";
-import { Login } from "./components/Login";
+import { Chat } from "./components/applications/Chat";
+import { Login } from "./components/Login/Login";
 import { CHAT_ROUTE, LOGIN_ROUTE } from "./utils/constants";
 
 export const publicRoutes = [
